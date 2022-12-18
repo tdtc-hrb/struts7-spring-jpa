@@ -55,6 +55,24 @@ mvn compile
 mvn package -DskipTests
 ```
 
+## org.apache.maven.plugins:maven-war-plugin:2.2
+```
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-war-plugin:2.2:war 
+(default-war) on project struts6-spring-jpa: Execution default-war of goal 
+org.apache.maven.plugins:maven-war-plugin:2.2:war failed: Unable to load the mojo 'war' in the plugin 
+'org.apache.maven.plugins:maven-war-plugin:2.2' due to an API incompatibility: 
+org.codehaus.plexus.component.repository.exception.ComponentLookupException: Cannot access defaults field of Properties
+```
+add pom.xml:
+```xml
+      <plugin>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-war-plugin -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.2</version>
+      </plugin>
+```
+
 ## Jetty
 Set JETTY_HOME in you system path:
 
