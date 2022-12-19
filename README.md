@@ -120,4 +120,4 @@ java -jar %JETTY_HOME%\start.jar
 - [Jakarta Persistence](https://docs.jboss.org/hibernate/orm/6.0/migration-guide/migration-guide.html#_jakarta_persistence)
 - [Jetty Setup](https://happycoding.io/tutorials/java-server/jetty-setup)
 - [why is dependency to javax.persistence-api removed in hibernate-core 6.0.2](https://stackoverflow.com/questions/72475572/why-is-dependency-to-javax-persistence-api-removed-in-hibernate-core-6-0-2)
-- [Hibernate-sequence doesn't exist](https://stackoverflow.com/a/36086793)
+- [Table 'test.hibernate_sequence' doesn't exist](https://stackoverflow.com/a/36086793)
